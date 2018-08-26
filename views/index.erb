@@ -11,37 +11,38 @@
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet"> 
   </head>
   <body>
-    <div id="backgroundImage">
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <h1 class="text-center">Mumories</h1>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <h1 class="text-center">M u m o r i e s</h1>
 
-        <div id="picture" class="text-center">
-          <img src="https://s3.eu-west-2.amazonaws.com/mumories/mumory_<%= @mumory %>.jpg", class='img-fluid'>
-        </div>
+      <div id="picture" class="text-center">
+        <img src="https://s3.eu-west-2.amazonaws.com/mumories/mumory_<%= @mumory %>.jpg", class='img-fluid'>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <p>Happy 60th Mummmmmmy!</p>
+        <p>Made with 💖 by Ben, Katy and Tom</p>
       </div>
-
-      <div id="main"></div>
-
-      <script type="text/javascript">
-        var img = document.createElement('img');
-        img.setAttribute('src', 'https://s3.eu-west-2.amazonaws.com/mumories/mumory_<%= @mumory %>.jpg')
-        img.crossOrigin = "Anonymous";
-
-        img.addEventListener('load', function() {
-            var vibrant = new Vibrant(img);
-            var swatches = vibrant.swatches()
-
-            console.log(swatches['Vibrant'].getHex())
-            document.getElementById("main").style = 'background-color: ' + swatches['Vibrant'].getHex()
-            document.getElementsByTagName("h1")[0].style = 'color: ' + swatches['Vibrant'].getTitleTextColor()
-
-            // for (var swatch in swatches)
-            //     if (swatches.hasOwnProperty(swatch) && swatches[swatch])
-            //         console.log(swatch, swatches[swatch].getHex())
-
-        });
-      </script>
     </div>
+
+    <div id="main"></div>
+
+    <script type="text/javascript">
+      var img = document.createElement('img');
+      img.setAttribute('src', '/small_mumories/mumory_<%= @mumory %>.jpg')
+      img.crossOrigin = "Anonymous";
+
+      img.addEventListener('load', function() {
+          var vibrant = new Vibrant(img);
+          var swatches = vibrant.swatches()
+
+          console.log(swatches['Vibrant'].getHex())
+          document.getElementById("main").style = 'background-color: ' + swatches['Vibrant'].getHex()
+          document.getElementsByTagName("h1")[0].style = 'color: ' + swatches['Vibrant'].getTitleTextColor()
+
+          // for (var swatch in swatches)
+          //     if (swatches.hasOwnProperty(swatch) && swatches[swatch])
+          //         console.log(swatch, swatches[swatch].getHex())
+
+      });
+    </script>
     <div id="flower">
       <img src="/flowers_<%= Date.today.cwday %>.png">
     </div>
