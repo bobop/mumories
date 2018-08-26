@@ -39,6 +39,11 @@ body {
   opacity: 1;
   filter:alpha(opacity=100);
   z-index: 999;
+  border: 20px solid #fff;
+  /*border-bottom: 120px solid #fff;*/
+  -webkit-box-shadow: 6px 6px 6px #777;
+     -moz-box-shadow: 6px 6px 6px #777;
+          box-shadow: 6px 6px 6px #777;
 }
 
 h1 {
