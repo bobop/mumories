@@ -6,7 +6,7 @@ get '/' do
 
   today = Date.today
   mums_birthday = Date.parse '2018-08-27'
-  @mumory = (mums_birthday - today).to_i + 1
+  @mumory = (today - mums_birthday).to_i + 1
 
   erb :index
 end
