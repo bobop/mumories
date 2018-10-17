@@ -1,43 +1,32 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: New Feature proposal for Jane
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Business Problem Statement
+- What is the problem that Jane needs to solve?
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Functional & Non-functional Requirements
+- What are the restrictions that need to be considered?
+- Deliverables. What are the expectations – system, help files, documentation, full source code, training, support, etc.?
+- A detailed description of the requirement including goals
+- MoSCoW of requirements (Must have, Should have, Could have, Won’t have)?
+- Any known design/implementation issues relating to this requirement?
+- Does this requirement interact with other requirements?
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Technical Notes
+- Which parts of the Jane codebase/infrastructure need changing?
+- What is the required security?
+- What other systems need to integrate/communicate?
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Stakeholders
+- Who is the intended user?
+- How many users are there? Are they the same type of user or different?
+- What level of computer experience will the users have (or is needed)?
 
-**Business Problem Statement**
-What is the problem that the organization needs to solve?
+## Outstanding Questions
+- Questions which have no answer yet
 
-**Functional & Non-functional Requirements**
-What are the restrictions that need to be considered?
-Deliverables. What are the expectations – system, help files, documentation, full source code, training, support, etc.?
-A detailed description of the requirement including goals
-MoSCoW of requirements (Must have, Should have, Could have, Won’t have)?
-Any known design/implementation issues relating to this requirement?
-Does this requirement interact with other requirements?
-
-**Technical Notes**
-What is the required security?
-What other systems need to integrate/communicate?
-
-**Stakeholders**
-Who is the intended user?
-How many users are there? Are they the same type of user or different?
-What level of computer experience will the users have (or is needed)?
-
-**Outstanding Questions**
-Questions which have no answer yet
-
-**Resources**
-Internal or External resources for reference or guidance
+## Resources
+- Internal or External resources for reference or guidance
